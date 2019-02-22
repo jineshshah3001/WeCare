@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+                <class name="vo.subscriptionVO" table="subscription">
+
+ 
+
+                                <id name="subscription_id" column="subscription_id" >
+
+                                                <generator class="increment" />
+
+                                </id>
+
+                                 <property name="email_id">
+
+                                <column name="email_id"/>
+
+                                </property>                      
+                             <property name="EIN">
+
+                                <column name="EIN"/>
+                             </property>    
+                                <property name="active">
+                                    <column name="active"></column>
+                                </property>
+
+                              <property name="name">
+                                    <column name="name"></column>
+                                </property>
+                                
+
+                              
+
+</class>
+
+                   
+</hibernate-mapping>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="vo.available_thingsVO" table="available_things">
+
+<id name="user_id" column="user_id" type="integer">
+<generator class="assigned"/>
+</id>
+<!-- <property name="EIN">
+<column name="EIN" />
+</property> -->
+<property name="elec">
+<column name="elec" />
+</property>
+<property name="electext">
+<column name="electext" />
+</property>
+
+<property name="edu">
+<column name="edu" />
+</property>
+<property name="edutext">
+<column name="edutext" />
+</property>
+
+<property name="health">
+<column name="health" />
+</property>
+<property name="healthtext">
+<column name="healthtext" />
+</property>
+
+<property name="hunger">
+<column name="hunger" />
+</property>
+<property name="hungertext">
+<column name="hungertext" />
+</property>
+
+<property name="sports">
+<column name="sports" />
+</property>
+<property name="sportstext">
+<column name="sportstext" />
+</property>
+
+<property name="household">
+<column name="household" />
+</property>
+<property name="housetext">
+<column name="housetext" />
+</property>
+
+<property name="other">
+<column name="other" />
+</property>
+<many-to-one name="userVo" class="vo.userVO" column="user_id" insert="false" update="false"></many-to-one>
+    
+</class>
+
+</hibernate-mapping>
+

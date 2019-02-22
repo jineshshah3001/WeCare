@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="vo.success_storiesVO" table="success_stories">
+
+		<id name="story_id" column="story_id" >
+			<generator class="increment" /> 
+		</id>
+		
+		<property name="story_name">
+		<column name="story_name"/>
+		</property>	
+		
+		<property name="story_desc">
+		<column name="story_desc"/>
+		</property>	
+		
+		
+		<property name="story_owner">
+			<column name="story_owner" />
+		</property>
+		
+		<!-- <many-to-one name="abc" class="vo.insertVO" column="EIN" insert="false" update="false" ></many-to-one>	 -->	
+		
+</class>
+		
+
+</hibernate-mapping>
